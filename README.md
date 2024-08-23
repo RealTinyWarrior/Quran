@@ -1,6 +1,6 @@
 The source code of this application.
 
--   Assets contains images and other necessary files for this project.
--   The root directory has the App.tsx and other configuration files.
+-   App contains the routes for this application.
+-   Assets contain images and other necessary files for this project.
 
 This application is still under development.
