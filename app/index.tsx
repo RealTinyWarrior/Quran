@@ -4,6 +4,7 @@ import { StatusBar } from "expo-status-bar";
 import { LinearGradient } from "expo-linear-gradient";
 import Menus from "../assets/icons/menus";
 import QuranSVG from "../assets/icons/quran";
+import Navbox from "../components/Navbox";
 
 export default function Home() {
     return (
@@ -33,11 +34,11 @@ export default function Home() {
                 <View style={styles.mainbox}>
                     <View style={styles.mainbox_text}>
                         <Text style={{ fontSize: 19, fontWeight: "900" }}>
-                            This is a dummy text, this is not a very cool looking text and we are trying some
-                            allignment.
+                            Indeed, it is not the eyes that are blind, but it is the hearts in the chests that
+                            grow blind.
                         </Text>
 
-                        <Text style={{ fontWeight: "600" }}>Some Example (22:33)</Text>
+                        <Text style={{ fontWeight: "600" }}>Quran (22:46)</Text>
                     </View>
 
                     <View style={{ width: "32%" }}>
@@ -48,10 +49,15 @@ export default function Home() {
                 <Text style={styles.exploreTitle}>Explore</Text>
 
                 <View style={{ display: "flex", marginTop: "3%" }}>
-                    <View style={styles.navButtons}></View>
-                    <View style={styles.navButtons}></View>
-                    <View style={styles.navButtons}></View>
-                    <View style={styles.navButtons}></View>
+                    <View style={styles.navButtons}>
+                        <Navbox preText="Recite The" title="Quran" />
+                        <Navbox preText="Learn" title="Hadiths" />
+                    </View>
+
+                    <View style={styles.navButtons}>
+                        <Navbox preText="Miracles of" title="Islam" />
+                        <Navbox preText="Subjective" title="Ayaats" />
+                    </View>
                 </View>
             </SafeAreaView>
         </View>
@@ -112,7 +118,7 @@ const styles = StyleSheet.create({
 
     mainbox: {
         width: "100%",
-        height: "25%",
+        height: 205,
         marginTop: "5%",
         borderRadius: 15,
         elevation: 12,
@@ -124,7 +130,7 @@ const styles = StyleSheet.create({
     },
 
     mainbox_text: {
-        width: "68%",
+        width: "66%",
         height: "100%",
         display: "flex",
         justifyContent: "space-between",
@@ -137,9 +143,10 @@ const styles = StyleSheet.create({
     },
 
     navButtons: {
-        height: "12%",
+        width: "100%",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
+        marginBottom: "2.7%",
     },
 });
