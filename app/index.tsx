@@ -5,8 +5,15 @@ import { LinearGradient } from "expo-linear-gradient";
 import Menus from "../assets/icons/menus";
 import QuranSVG from "../assets/icons/quran";
 import Navbox from "../components/Navbox";
+import { router } from "expo-router";
+import * as NavigationBar from "expo-navigation-bar";
+import WelcomeVerse from "../components/WelcomeVerse";
 
 export default function Home() {
+    NavigationBar.setBorderColorAsync("#D3D3D3");
+    NavigationBar.setBackgroundColorAsync("#F0F8FF");
+    NavigationBar.setButtonStyleAsync("dark");
+
     return (
         <View style={styles.body}>
             <LinearGradient
@@ -21,11 +28,10 @@ export default function Home() {
 
                 <View style={styles.navbar}>
                     <Image style={styles.icon} source={require("../assets/icons/icon-rounded.png")} />
-
                     <View style={styles.iconShadow}></View>
 
                     <View style={styles.menu}>
-                        <TouchableNativeFeedback>
+                        <TouchableNativeFeedback onPress={() => router.push("/settings")}>
                             <Menus />
                         </TouchableNativeFeedback>
                     </View>
@@ -33,12 +39,7 @@ export default function Home() {
 
                 <View style={styles.mainbox}>
                     <View style={styles.mainbox_text}>
-                        <Text style={{ fontSize: 19, fontWeight: "900" }}>
-                            Indeed, it is not the eyes that are blind, but it is the hearts in the chests that
-                            grow blind.
-                        </Text>
-
-                        <Text style={{ fontWeight: "600" }}>Quran (22:46)</Text>
+                        <WelcomeVerse />
                     </View>
 
                     <View style={{ width: "32%" }}>
@@ -50,13 +51,8 @@ export default function Home() {
 
                 <View style={{ display: "flex", marginTop: "3%" }}>
                     <View style={styles.navButtons}>
-                        <Navbox preText="Recite The" title="Quran" />
-                        <Navbox preText="Learn" title="Hadiths" />
-                    </View>
-
-                    <View style={styles.navButtons}>
-                        <Navbox preText="Miracles of" title="Islam" />
-                        <Navbox preText="Subjective" title="Ayaats" />
+                        <Navbox preText="Recite The" title="Quran" href="/quran" />
+                        <Navbox preText="Duas and" title="Hadiths" href="/dua" />
                     </View>
                 </View>
             </SafeAreaView>
@@ -112,16 +108,16 @@ const styles = StyleSheet.create({
     menu: {
         width: "15%",
         aspectRatio: 1,
-        borderRadius: 18,
+        borderRadius: 14,
         overflow: "hidden",
     },
 
     mainbox: {
         width: "100%",
-        height: 205,
+        height: 170,
         marginTop: "5%",
         borderRadius: 15,
-        elevation: 12,
+        elevation: 8,
         backgroundColor: "#F0F8FF",
         padding: "4.5%",
         display: "flex",
@@ -137,7 +133,7 @@ const styles = StyleSheet.create({
     },
 
     exploreTitle: {
-        fontSize: 42,
+        fontSize: 35,
         fontWeight: "900",
         marginTop: "5%",
     },

@@ -4,11 +4,12 @@ import QuranSymbol from "../assets/icons/quransymbol";
 import Hadith from "../assets/icons/hadith";
 import PlanetFill from "../assets/icons/planetfill";
 import TestTube from "../assets/icons/testtube";
+import { router } from "expo-router";
 
-const Navbox = ({ title, preText }: { title: string; preText: string }) => {
+const Navbox = ({ title, preText, href }: { title: string; preText: string; href: string }) => {
     return (
         <View style={styles.container}>
-            <TouchableNativeFeedback>
+            <TouchableNativeFeedback onPress={() => router.push(href)}>
                 <View style={styles.buttonCont}>
                     <Icon name={title} />
 
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
     },
 
     text: {
-        fontSize: 20,
+        fontSize: 16,
         fontWeight: "900",
         marginLeft: "2%",
     },
