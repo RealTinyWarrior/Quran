@@ -25,9 +25,9 @@ const RootLayout = () => {
     return (
         <LanguageContext.Provider value={[language, setLanguage]}>
             <Stack>
-                <Stack.Screen options={{ headerShown: false, animation: "slide_from_right" }} name="index" />
+                <Stack.Screen options={{ headerShown: false, animation: "fade_from_bottom" }} name="index" />
                 <Stack.Screen
-                    options={{ headerShown: false, animation: "slide_from_right" }}
+                    options={{ headerShown: false, animation: "fade_from_bottom" }}
                     name="settings/index"
                 />
                 <Stack.Screen
