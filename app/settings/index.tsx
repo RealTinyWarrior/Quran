@@ -9,18 +9,14 @@ import SettingContent from "../../components/SettingContent";
 import Credits from "../../components/Credits";
 import { LanguageContext } from "../_layout";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import Lang from "../../components/Lang";
 
 const SettingsPage = () => {
     const [language, setLanguage] = useContext(LanguageContext);
 
-    const changeLanguage = (languageParam: string) => {
+    const changeLanguage = async (languageParam: string) => {
         setLanguage(languageParam);
-
-        async function storeLanguage() {
-            await AsyncStorage.setItem("language", languageParam);
-        }
-
-        storeLanguage();
+        await AsyncStorage.setItem("language", languageParam);
     };
 
     return (
@@ -37,13 +33,17 @@ const SettingsPage = () => {
                         </TouchableNativeFeedback>
                     </View>
 
-                    <Text style={{ fontWeight: 900, fontSize: 27 }}>Settings</Text>
+                    <Lang english="Settings" bengali="সেটিংস" style={{ fontWeight: 900, fontSize: 27 }} />
                 </View>
 
                 <View style={styles.main}>
                     <SettingsBox
-                        description="Select your preferred language"
-                        title="Language"
+                        description={
+                            language == "English"
+                                ? "Select your preferred language"
+                                : "আপনার পছন্দের ভাষা নির্বাচন করুন"
+                        }
+                        title={language == "English" ? "Language" : "ভাষা"}
                         Icon={<LanguageSVG width={80} height={80} />}
                     >
                         <View>
@@ -58,7 +58,7 @@ const SettingsPage = () => {
                                 selected={language === "Bengali"}
                                 onClick={() => changeLanguage("Bengali")}
                             >
-                                <Text style={styles.option}>Bengali</Text>
+                                <Text style={styles.option}>বাংলা</Text>
                             </SettingContent>
                         </View>
                     </SettingsBox>

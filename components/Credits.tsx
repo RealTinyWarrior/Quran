@@ -1,18 +1,24 @@
 import { View, Text } from "react-native";
 import React from "react";
+import Lang from "./Lang";
 
 const Credits = () => {
     return (
         <View style={{ padding: "7.5%" }}>
-            <Text style={{ textAlign: "center", fontWeight: "900", fontSize: 40, marginBottom: "1.5%" }}>
-                Al Quran
-            </Text>
+            <Lang
+                english="Al Quran"
+                bengali="আল কুরআন"
+                style={{ textAlign: "center", fontWeight: "900", fontSize: 40, marginBottom: "2.5%" }}
+            />
 
-            <Text style={{ textAlign: "center", lineHeight: 22, fontWeight: "400" }}>
-                An all-in-one Quran application! Recite the holy Quran or read hadiths and much more! This
+            <Lang
+                english="An all-in-one Quran application! Recite the holy Quran or read hadiths and much more! This
                 mobile application is under development and is being being developed by Tahmidur Rahman
-                [TinyWarrior], Tamjidur Rahman, Muntasir Rahman and Rahad.
-            </Text>
+                [TinyWarrior], Tamjidur Rahman and Muntasir Rahman."
+                bengali="একটি অল-ইন ওয়ান কুরআন অ্যাপ্লিকেশন! পবিত্র কোরআন তেলাওয়াত কোরুন বা হাদিস পড়ুন এবং আরও অনেক কিছু! এই
+                মোবাইল অ্যাপ্লিকেশনটি তাহমিদুর রহমান [TinyWarrior], তামজিদুর রহমান ও মুনতাসির রহমান তৈরি করছেন।"
+                style={{ textAlign: "center", lineHeight: 22, fontWeight: "400" }}
+            />
         </View>
     );
 };

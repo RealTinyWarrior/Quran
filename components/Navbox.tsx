@@ -5,8 +5,14 @@ import Hadith from "../assets/icons/hadith";
 import PlanetFill from "../assets/icons/planetfill";
 import TestTube from "../assets/icons/testtube";
 import { router } from "expo-router";
+import { useContext } from "react";
+import { LanguageContext } from "../app/_layout";
 
-const Navbox = ({ title, preText, href }: { title: string; preText: string; href: string }) => {
+type Props = { title: string; preText: string; href: string; titleBengali: string; preTextBengali: string };
+
+const Navbox = ({ title, preText, titleBengali, preTextBengali, href }: Props) => {
+    const [language, setLanguage] = useContext(LanguageContext);
+
     return (
         <View style={styles.container}>
             <TouchableNativeFeedback onPress={() => router.push(href)}>
@@ -15,7 +21,8 @@ const Navbox = ({ title, preText, href }: { title: string; preText: string; href
 
                     <Text style={styles.text}>
                         {" "}
-                        {preText} {"\n"} {title}
+                        {language == "English" ? preText : preTextBengali} {"\n"}{" "}
+                        {language == "English" ? title : titleBengali}
                     </Text>
                 </View>
             </TouchableNativeFeedback>

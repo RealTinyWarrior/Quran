@@ -8,6 +8,7 @@ import Navbox from "../components/Navbox";
 import { router } from "expo-router";
 import * as NavigationBar from "expo-navigation-bar";
 import WelcomeVerse from "../components/WelcomeVerse";
+import Lang from "../components/Lang";
 
 export default function Home() {
     NavigationBar.setBorderColorAsync("#D3D3D3");
@@ -47,12 +48,25 @@ export default function Home() {
                     </View>
                 </View>
 
-                <Text style={styles.exploreTitle}>Explore</Text>
+                <Lang style={styles.exploreTitle} english="Explore" bengali="অন্বেষণ" />
 
                 <View style={{ display: "flex", marginTop: "3%" }}>
                     <View style={styles.navButtons}>
-                        <Navbox preText="Recite The" title="Quran" href="/quran" />
-                        <Navbox preText="Duas and" title="Hadiths" href="/dua" />
+                        <Navbox
+                            preText="Recite The"
+                            preTextBengali="কুরআন"
+                            titleBengali="তিলাওয়াত"
+                            title="Quran"
+                            href="/quran"
+                        />
+
+                        <Navbox
+                            preText="Duas and"
+                            preTextBengali="হাদিস এবং"
+                            title="Hadiths"
+                            titleBengali="দুয়া পরুন"
+                            href="/dua"
+                        />
                     </View>
                 </View>
             </SafeAreaView>
