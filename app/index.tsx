@@ -9,6 +9,11 @@ import { router } from "expo-router";
 import * as NavigationBar from "expo-navigation-bar";
 import WelcomeVerse from "../components/WelcomeVerse";
 import Lang from "../components/Lang";
+import * as SplashScreen from "expo-splash-screen"
+
+SplashScreen.setOptions( {
+    fade: true
+})
 
 export default function Home() {
     NavigationBar.setBorderColorAsync("#D3D3D3");
@@ -61,11 +66,11 @@ export default function Home() {
                         />
 
                         <Navbox
-                            preText="Duas and"
-                            preTextBengali="হাদিস এবং"
-                            title="Hadiths"
-                            titleBengali="দুয়া পরুন"
-                            href="/dua"
+                            preText="Arabic"
+                            preTextBengali="আরবি"
+                            title="Calender"
+                            titleBengali="ক্যালেন্ডার"
+                            href="/calender"
                         />
                     </View>
                 </View>

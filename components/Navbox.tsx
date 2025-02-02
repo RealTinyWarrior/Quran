@@ -1,12 +1,12 @@
 import { View, Text, StyleSheet, TouchableNativeFeedback } from "react-native";
 import QuranSVG from "../assets/icons/quran";
 import QuranSymbol from "../assets/icons/quransymbol";
-import Hadith from "../assets/icons/hadith";
 import PlanetFill from "../assets/icons/planetfill";
 import TestTube from "../assets/icons/testtube";
 import { router } from "expo-router";
 import { useContext } from "react";
 import { LanguageContext } from "../app/_layout";
+import CalenderSVG from "../assets/icons/calender";
 
 type Props = { title: string; preText: string; href: string; titleBengali: string; preTextBengali: string };
 
@@ -33,8 +33,8 @@ const Navbox = ({ title, preText, titleBengali, preTextBengali, href }: Props) =
 const Icon = ({ name }: { name: string }) => {
     return name == "Quran" ? (
         <QuranSymbol style={styles.icon} />
-    ) : name === "Hadiths" ? (
-        <Hadith style={styles.icon} />
+    ) : name === "Calender" ? (
+        <CalenderSVG style={styles.icon} />
     ) : name == "Islam" ? (
         <PlanetFill style={styles.icon} />
     ) : name == "Ayaats" ? (
