@@ -9,11 +9,6 @@ import { router } from "expo-router";
 import * as NavigationBar from "expo-navigation-bar";
 import WelcomeVerse from "../components/WelcomeVerse";
 import Lang from "../components/Lang";
-import * as SplashScreen from "expo-splash-screen"
-
-SplashScreen.setOptions( {
-    fade: true
-})
 
 export default function Home() {
     NavigationBar.setBorderColorAsync("#D3D3D3");

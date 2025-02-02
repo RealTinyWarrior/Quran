@@ -35,7 +35,7 @@ const RootLayout = () => {
                     options={{ headerShown: false, animation: "fade_from_bottom" }}
                 />
                 <Stack.Screen
-                    name="dua/index"
+                    name="calender/index"
                     options={{ headerShown: false, animation: "fade_from_bottom" }}
                 />
             </Stack>

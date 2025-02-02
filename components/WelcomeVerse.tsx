@@ -55,13 +55,13 @@ const WelcomeVerse = () => {
             <Lang
                 english={versesEnglish[verseIndex]}
                 bengali={versesBengali[verseIndex]}
-                style={{ fontSize: 19, fontWeight: "800" }}
+                style={{ fontSize: 18, fontWeight: "800" }}
             />
 
             <Lang
                 english={source[verseIndex]}
                 bengali={source[verseIndex].replace("Quran", "কুরআন")}
-                style={{ fontWeight: "600" }}
+                style={{ fontWeight: "600", color: "#3b3b3b", fontSize: 12.5 }}
             />
         </>
     );

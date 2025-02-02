@@ -3,11 +3,11 @@ import React from "react";
 import { Link } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const DuaPage = () => {
+const CalenderPage = () => {
     return (
         <View style={styles.body}>
             <SafeAreaView style={styles.container}>
-                <Text>Dua Route</Text>
+                <Text>Calender Route</Text>
                 <Link href="/">Home</Link>
             </SafeAreaView>
         </View>
@@ -30,4 +30,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default DuaPage;
+export default CalenderPage;

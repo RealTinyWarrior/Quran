@@ -8,7 +8,7 @@ const Credits = () => {
             <Lang
                 english="Al Quran"
                 bengali="আল কুরআন"
-                style={{ textAlign: "center", fontWeight: "900", fontSize: 40, marginBottom: "2.5%" }}
+                style={{ textAlign: "center", fontWeight: "900", fontSize: 36, marginBottom: "2.5%" }}
             />
 
             <Lang
@@ -17,7 +17,7 @@ const Credits = () => {
                 [TinyWarrior], Tamjidur Rahman and Muntasir Rahman."
                 bengali="একটি অল-ইন ওয়ান কুরআন অ্যাপ্লিকেশন! পবিত্র কোরআন তেলাওয়াত কোরুন বা হাদিস পড়ুন এবং আরও অনেক কিছু! এই
                 মোবাইল অ্যাপ্লিকেশনটি তাহমিদুর রহমান [TinyWarrior], তামজিদুর রহমান ও মুনতাসির রহমান তৈরি করছেন।"
-                style={{ textAlign: "center", lineHeight: 22, fontWeight: "400" }}
+                style={{ textAlign: "center", lineHeight: 22, fontWeight: "400", color: "#616161" }}
             />
         </View>
     );
