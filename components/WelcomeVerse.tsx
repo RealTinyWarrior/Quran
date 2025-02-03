@@ -12,7 +12,7 @@ const versesEnglish = [
 const versesBengali = [
     "বস্তুতঃ চক্ষু তো অন্ধ হয় না, কিন্তু বক্ষ স্থিত অন্তরই অন্ধ হয়।",
     "কাজেই তোমরা আমাকে স্মরণ কর, আমিও তোমাদেরকে স্মরণ করব এবং আমার শোকর করতে থাক, না-শোকরী করো না।",
-    "যারা নিজেদের উপর বাড়াবাড়ি করেছ, তোমরা আল্লাহর রহমত থেকে নিরাশ হয়ো না। আল্লাহ সমস্ত গুনাহ ক্ষমা করে দেবেন।",
+    "তোমরা আল্লাহর রহমত থেকে নিরাশ হয়ো না। আল্লাহ সমস্ত গুনাহ ক্ষমা করে দেবেন।",
     "",
 ];
 
@@ -55,13 +55,13 @@ const WelcomeVerse = () => {
             <Lang
                 english={versesEnglish[verseIndex]}
                 bengali={versesBengali[verseIndex]}
-                style={{ fontSize: 18, fontWeight: "800" }}
+                style={{ fontSize: 15, fontWeight: "800" }}
             />
 
             <Lang
                 english={source[verseIndex]}
                 bengali={source[verseIndex].replace("Quran", "কুরআন")}
-                style={{ fontWeight: "600", color: "#3b3b3b", fontSize: 12.5 }}
+                style={{ fontWeight: "600", color: "#3b3b3b", fontSize: 12 }}
             />
         </>
     );

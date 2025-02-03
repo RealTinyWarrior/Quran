@@ -11,7 +11,7 @@ import WelcomeVerse from "../components/WelcomeVerse";
 import Lang from "../components/Lang";
 
 export default function Home() {
-    NavigationBar.setBorderColorAsync("#D3D3D3");
+    NavigationBar.setBorderColorAsync("#EDEDED");
     NavigationBar.setBackgroundColorAsync("#F0F8FF");
     NavigationBar.setButtonStyleAsync("dark");
 
