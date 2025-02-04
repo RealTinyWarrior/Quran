@@ -4,14 +4,14 @@ import Lang from "./Lang";
 
 const versesEnglish = [
     "Indeed, it is not the eyes that are blind, but it is the hearts in the chests that grow blind.",
-    "So remember Me; I will remember you. And be grateful to Me and do not deny Me.",
+    "So remember Me; I will remember you.",
     "Do not despair of the mercy of Allāh. Indeed, Allāh forgives all sins.",
     "",
 ];
 
 const versesBengali = [
     "বস্তুতঃ চক্ষু তো অন্ধ হয় না, কিন্তু বক্ষ স্থিত অন্তরই অন্ধ হয়।",
-    "কাজেই তোমরা আমাকে স্মরণ কর, আমিও তোমাদেরকে স্মরণ করব এবং আমার শোকর করতে থাক, না-শোকরী করো না।",
+    "কাজেই তোমরা আমাকে স্মরণ কর, আমিও তোমাদেরকে স্মরণ করব।",
     "তোমরা আল্লাহর রহমত থেকে নিরাশ হয়ো না। আল্লাহ সমস্ত গুনাহ ক্ষমা করে দেবেন।",
     "",
 ];

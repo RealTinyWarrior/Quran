@@ -7,6 +7,8 @@ import { router } from "expo-router";
 import { useContext } from "react";
 import { LanguageContext } from "../app/_layout";
 import CalenderSVG from "../assets/icons/calender";
+import ClockSVG from "../assets/icons/clock";
+import Hadith from "../assets/icons/hadith";
 
 type Props = { title: string; preText: string; href: string; titleBengali: string; preTextBengali: string };
 
@@ -39,6 +41,10 @@ const Icon = ({ name }: { name: string }) => {
         <PlanetFill style={styles.icon} />
     ) : name == "Ayaats" ? (
         <TestTube style={styles.icon} />
+    ) : name == "Timeline" ? (
+        <ClockSVG style={styles.icon} />
+    ) : name == "Hadiths" ? (
+        <Hadith style={styles.icon} />
     ) : (
         <QuranSVG style={styles.icon} />
     );
@@ -46,7 +52,7 @@ const Icon = ({ name }: { name: string }) => {
 
 const styles = StyleSheet.create({
     container: {
-        width: "47%",
+        width: "48.5%",
         backgroundColor: "#F0F8FF",
         borderRadius: 12,
         elevation: 10,
@@ -75,7 +81,7 @@ const styles = StyleSheet.create({
         position: "relative",
         height: "150%",
         width: "27%",
-        marginLeft: "4.1%",
+        marginLeft: "5%",
     },
 });
 

@@ -53,11 +53,29 @@ export default function Home() {
                 <View style={{ display: "flex", marginTop: "3%" }}>
                     <View style={styles.navButtons}>
                         <Navbox
-                            preText="Recite The"
+                            preText="Recite"
                             preTextBengali="কুরআন"
                             titleBengali="তিলাওয়াত"
                             title="Quran"
                             href="/quran"
+                        />
+
+                        <Navbox
+                            preText="Duas and"
+                            preTextBengali="দোয়া এবং"
+                            title="Hadiths"
+                            titleBengali="হাদিস"
+                            href="/dua"
+                        />
+                    </View>
+
+                    <View style={styles.navButtons}>
+                        <Navbox
+                            preText="Prayer"
+                            preTextBengali="নামাজের"
+                            title="Timeline"
+                            titleBengali="সময়সূচি"
+                            href="/timeline"
                         />
 
                         <Navbox

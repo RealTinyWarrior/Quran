@@ -1,6 +1,6 @@
 import * as React from "react";
 import Svg, { G, Path } from "react-native-svg";
-const CalenderSVG = (props: any) => (
+const ClockSVG = (props: any) => (
     <Svg
         fill="#000000"
         id="Capa_1"
@@ -86,4 +86,4 @@ const CalenderSVG = (props: any) => (
         </G>
     </Svg>
 );
-export default CalenderSVG;
+export default ClockSVG;

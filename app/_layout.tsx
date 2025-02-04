@@ -26,18 +26,11 @@ const RootLayout = () => {
         <LanguageContext.Provider value={[language, setLanguage]}>
             <Stack>
                 <Stack.Screen options={{ headerShown: false, animation: "fade_from_bottom" }} name="index" />
-                <Stack.Screen
-                    options={{ headerShown: false, animation: "fade_from_bottom" }}
-                    name="settings/index"
-                />
-                <Stack.Screen
-                    name="quran/index"
-                    options={{ headerShown: false, animation: "fade_from_bottom" }}
-                />
-                <Stack.Screen
-                    name="calender/index"
-                    options={{ headerShown: false, animation: "fade_from_bottom" }}
-                />
+                <Stack.Screen options={{ headerShown: false, animation: "fade_from_bottom" }} name="settings/index" />
+                <Stack.Screen name="quran/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="calender/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="timeline/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="dua/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
             </Stack>
         </LanguageContext.Provider>
     );
