@@ -1,6 +1,5 @@
 # Quran Application
 An all-in-one Quran application! Recite the holy Quran or read hadiths and much more! 
-Project is temporarily closed.
 ### The code
 
 -   App contains the routes for this application.
