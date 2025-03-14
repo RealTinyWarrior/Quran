@@ -10,18 +10,25 @@ import CalenderSVG from "../assets/icons/calender";
 import ClockSVG from "../assets/icons/clock";
 import Hadith from "../assets/icons/hadith";
 
-type Props = { title: string; preText: string; href: string; titleBengali: string; preTextBengali: string };
+type Props = {
+    title: string;
+    preText: string;
+    href: string;
+    titleBengali: string;
+    preTextBengali: string;
+    fill?: boolean;
+};
 
-const Navbox = ({ title, preText, titleBengali, preTextBengali, href }: Props) => {
-    const [language, setLanguage] = useContext(LanguageContext);
+const Navbox = ({ title, preText, titleBengali, preTextBengali, href, fill }: Props) => {
+    const [language] = useContext(LanguageContext);
 
     return (
-        <View style={styles.container}>
+        <View style={fill == true ? styles.containerFill : styles.container}>
             <TouchableNativeFeedback onPress={() => router.push(href)}>
                 <View style={styles.buttonCont}>
                     <Icon name={title} />
 
-                    <Text style={styles.text}>
+                    <Text style={fill ? styles.fillText : styles.text}>
                         {" "}
                         {language == "English" ? preText : preTextBengali} {"\n"}{" "}
                         {language == "English" ? title : titleBengali}
@@ -34,7 +41,7 @@ const Navbox = ({ title, preText, titleBengali, preTextBengali, href }: Props) =
 
 const Icon = ({ name }: { name: string }) => {
     return name == "Quran" ? (
-        <QuranSymbol style={styles.icon} />
+        <QuranSymbol style={styles.fillIcon} />
     ) : name === "Calender" ? (
         <CalenderSVG style={styles.icon} />
     ) : name == "Islam" ? (
@@ -43,7 +50,7 @@ const Icon = ({ name }: { name: string }) => {
         <TestTube style={styles.icon} />
     ) : name == "Timeline" ? (
         <ClockSVG style={styles.icon} />
-    ) : name == "Hadiths" ? (
+    ) : name == "Mas'alah" ? (
         <Hadith style={styles.icon} />
     ) : (
         <QuranSVG style={styles.icon} />
@@ -53,6 +60,17 @@ const Icon = ({ name }: { name: string }) => {
 const styles = StyleSheet.create({
     container: {
         width: "48.5%",
+        backgroundColor: "#F0F8FF",
+        borderRadius: 12,
+        elevation: 7,
+        zIndex: 1,
+        display: "flex",
+        flexDirection: "row",
+        overflow: "hidden",
+    },
+
+    containerFill: {
+        width: "100%",
         backgroundColor: "#F0F8FF",
         borderRadius: 12,
         elevation: 10,
@@ -73,6 +91,12 @@ const styles = StyleSheet.create({
 
     text: {
         fontSize: 16,
+        fontWeight: "700",
+        marginLeft: "2%",
+    },
+
+    fillText: {
+        fontSize: 20,
         fontWeight: "900",
         marginLeft: "2%",
     },
@@ -82,6 +106,13 @@ const styles = StyleSheet.create({
         height: "150%",
         width: "27%",
         marginLeft: "5%",
+    },
+
+    fillIcon: {
+        position: "relative",
+        height: "150%",
+        width: "21%",
+        marginLeft: "4%",
     },
 });
 

@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <View style={styles.body}>
             <LinearGradient
-                colors={["#9E7CD7", "#ADD8E6", "#F0F8FF", "white"]}
+                colors={["#c4a6f7", "#bfe8f5", "white", "white"]}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1.6, y: 0.89 }}
                 style={styles.gradient}
@@ -58,24 +58,17 @@ export default function Home() {
                             titleBengali="তিলাওয়াত"
                             title="Quran"
                             href="/quran"
-                        />
-
-                        <Navbox
-                            preText="Duas and"
-                            preTextBengali="দোয়া এবং"
-                            title="Hadiths"
-                            titleBengali="হাদিস"
-                            href="/dua"
+                            fill
                         />
                     </View>
 
                     <View style={styles.navButtons}>
                         <Navbox
-                            preText="Prayer"
-                            preTextBengali="নামাজের"
-                            title="Timeline"
-                            titleBengali="সময়সূচি"
-                            href="/timeline"
+                            preText="Dua and"
+                            preTextBengali="দোয়া এবং"
+                            title="Mas'alah"
+                            titleBengali="মাসআলা"
+                            href="/dua"
                         />
 
                         <Navbox
@@ -165,7 +158,7 @@ const styles = StyleSheet.create({
     },
 
     exploreTitle: {
-        fontSize: 35,
+        fontSize: 32,
         fontWeight: "900",
         marginTop: "5%",
     },
