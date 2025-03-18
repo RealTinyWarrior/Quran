@@ -9,6 +9,7 @@ import { LanguageContext } from "../app/_layout";
 import CalenderSVG from "../assets/icons/calender";
 import ClockSVG from "../assets/icons/clock";
 import Hadith from "../assets/icons/hadith";
+import Masalah from "../assets/icons/masalah";
 
 type Props = {
     title: string;
@@ -50,8 +51,10 @@ const Icon = ({ name }: { name: string }) => {
         <TestTube style={styles.icon} />
     ) : name == "Timeline" ? (
         <ClockSVG style={styles.icon} />
-    ) : name == "Mas'alah" ? (
+    ) : name == "Duas" ? (
         <Hadith style={styles.icon} />
+    ) : name == "Mas'alahs" ? (
+        <Masalah style={styles.icon} />
     ) : (
         <QuranSVG style={styles.icon} />
     );

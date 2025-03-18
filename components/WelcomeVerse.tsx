@@ -55,7 +55,7 @@ const WelcomeVerse = () => {
             <Lang
                 english={versesEnglish[verseIndex]}
                 bengali={versesBengali[verseIndex]}
-                style={{ fontSize: 15, fontWeight: "800" }}
+                style={{ fontSize: 17, fontWeight: "800" }}
             />
 
             <Lang
