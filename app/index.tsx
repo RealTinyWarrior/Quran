@@ -82,11 +82,11 @@ export default function Home() {
 
                     <View style={[styles.navButtons, { justifyContent: "center" }]}>
                         <Navbox
-                            preText="Arabic"
-                            preTextBengali="আরবি"
-                            title="Calender"
-                            titleBengali="ক্যালেন্ডার"
-                            href="/calender"
+                            preText="Prayer"
+                            preTextBengali="নামাজের"
+                            title="Timeline"
+                            titleBengali="সময়সূচী"
+                            href="/timeline"
                         />
                     </View>
                 </View>

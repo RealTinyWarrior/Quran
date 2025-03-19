@@ -6,7 +6,7 @@ import TestTube from "../assets/icons/testtube";
 import { router } from "expo-router";
 import { useContext } from "react";
 import { LanguageContext } from "../app/_layout";
-import CalenderSVG from "../assets/icons/calender";
+import CalenderSVG from "../assets/icons/calendar";
 import ClockSVG from "../assets/icons/clock";
 import Hadith from "../assets/icons/hadith";
 import Masalah from "../assets/icons/masalah";

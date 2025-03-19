@@ -47,17 +47,11 @@ const SettingsPage = () => {
                         Icon={<LanguageSVG width={80} height={80} />}
                     >
                         <View>
-                            <SettingContent
-                                selected={language === "English"}
-                                onClick={() => changeLanguage("English")}
-                            >
+                            <SettingContent selected={language === "English"} onClick={() => changeLanguage("English")}>
                                 <Text style={styles.option}>English</Text>
                             </SettingContent>
 
-                            <SettingContent
-                                selected={language === "Bengali"}
-                                onClick={() => changeLanguage("Bengali")}
-                            >
+                            <SettingContent selected={language === "Bengali"} onClick={() => changeLanguage("Bengali")}>
                                 <Text style={styles.option}>বাংলা</Text>
                             </SettingContent>
                         </View>
@@ -88,8 +82,6 @@ const styles = StyleSheet.create({
     head: {
         width: "100%",
         backgroundColor: "white",
-        borderBottomLeftRadius: 15,
-        borderBottomRightRadius: 15,
         elevation: 20,
         height: 87,
     },
