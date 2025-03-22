@@ -29,7 +29,7 @@ const SettingsPage = () => {
                 <View style={styles.top}>
                     <View style={{ overflow: "hidden", borderRadius: 4 }}>
                         <TouchableNativeFeedback style={styles.back} onPress={() => router.back()}>
-                            <BackButton style={{ width: 30, height: 40 }} />
+                            <BackButton style={{ width: 30, height: 35, marginTop: "2%" }} />
                         </TouchableNativeFeedback>
                     </View>
 

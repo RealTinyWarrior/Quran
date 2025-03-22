@@ -43,8 +43,6 @@ const Navbox = ({ title, preText, titleBengali, preTextBengali, href, fill }: Pr
 const Icon = ({ name }: { name: string }) => {
     return name == "Quran" ? (
         <QuranSymbol style={styles.fillIcon} />
-    ) : name === "Calender" ? (
-        <CalenderSVG style={styles.icon} />
     ) : name == "Islam" ? (
         <PlanetFill style={styles.icon} />
     ) : name == "Ayaats" ? (
