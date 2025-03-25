@@ -44,6 +44,31 @@ const versesEnglish = [
     "Verily, Allah is Forgiving and Merciful.",
     "Woe to every backbiter slanderer.",
     "He dimmed its night, and brought forth its daylight",
+    "And whoever fears Allah - He will make for him a way out.",
+    "Indeed, Allah is with those who fear Him and those who are doers of good.",
+    "And your Lord says, 'Call upon Me; I will respond to you.'",
+    "Indeed, Allah loves those who act justly.",
+    "And We have certainly made the Quran easy for remembrance, so is there any who will remember?",
+    "No soul knows what has been hidden for them of comfort for eyes as reward for what they used to do.",
+    "Indeed, the righteous will be among shades and springs.",
+    "Indeed, the companions of Paradise, that Day, will be amused in [joyful] occupation.",
+    "Their greeting the Day they meet Him will be, 'Peace.' And He has prepared for them a noble reward.",
+    "In their hearts is disease, so Allah has increased their disease.",
+    "And when it is said to them, 'Do not cause corruption on the earth,' they say, 'We are but reformers.'",
+    "Unquestionably, it is they who are the corrupters, but they perceive [it] not.",
+    "Unquestionably, it is they who are the foolish, but they know [it] not.",
+    "And be patient, for indeed, Allah does not allow to be lost the reward of those who do good.",
+    "Indeed, Allah is with the patient.",
+    "And speak to people good [words].",
+    "And those who suppress their anger and pardon people – and Allah loves the doers of good.",
+    "And We have enjoined upon man [care] for his parents.",
+    "Indeed, Allah commands justice and good conduct and giving to relatives.",
+    "And do not forget graciousness between you.",
+    "And whoever is patient and forgives – indeed, that is of the matters [requiring] determination.",
+    "And lower to them the wing of humility out of mercy.",
+    "Allah – there is no deity except Him, the Ever-Living, the Sustainer of existence.",
+    "And We have certainly honored the children of Adam.",
+    "Indeed, this Qur'an guides to that which is most suitable.",
 ];
 
 const versesBengali = [
@@ -79,6 +104,31 @@ const versesBengali = [
     "নিশ্চয়ই আল্লাহ ক্ষমাশীল এবং দয়ালু।",
     "দুর্ভোগ প্রত্যেকের, যে পিছনে ও সামনে লোকের নিন্দা করে।",
     "আর তিনি এর রাতকে করেছেন অন্ধকারাচ্ছন্ন এবং প্রকাশ করেছেন এর সূর্যালোক।",
+    "আর যে কেউ আল্লাহকে ভয় করে, তিনি তার জন্য বের হওয়ার পথ করে দেবেন।",
+    "নিশ্চয়ই, আল্লাহ তাদের সাথে আছেন যারা তাঁকে ভয় করে এবং যারা সৎকর্মশীল।",
+    "এবং তোমার প্রতিপালক বলেছেন, 'আমাকে ডাকো; আমি তোমাদের সাড়া দেব।'",
+    "নিশ্চয়ই, আল্লাহ তাদেরকে ভালোবাসেন যারা ন্যায়পরায়ণভাবে কাজ করে।",
+    "এবং অবশ্যই আমরা কুরআনকে স্মরণের জন্য সহজ করে দিয়েছি, তাহলে কি কেউ আছে যে স্মরণ করবে?",
+    "কেউ জানে না তাদের জন্য লুকিয়ে রাখা হয়েছে চোখের প্রশান্তির কী পুরস্কার, যা তারা কাজ করত তার বিনিময়ে।",
+    "নিশ্চয়ই, পরহেযগাররা ছায়া ও প্রস্রবণে থাকবে।",
+    "নিশ্চয়ই, সেদিন জান্নাতের সঙ্গীরা আনন্দময় কাজে মগ্ন থাকবে।",
+    "যেদিন তারা তাঁর সাথে সাক্ষাৎ করবে, তাদের অভিবাদন হবে 'সালাম'। এবং তিনি তাদের জন্য সম্মানজনক পুরস্কার প্রস্তুত করেছেন।",
+    "তাদের অন্তরে রোগ রয়েছে, ফলে আল্লাহ তাদের রোগ বাড়িয়ে দিয়েছেন।",
+    "যখন তাদেরকে বলা হয়, 'পৃথিবীতে দাঙ্গা-হাঙ্গামা সৃষ্টি করো না,' তারা বলে, 'আমরা তো শুধুমাত্র সংশোধনকারী।'",
+    "সাবধান! প্রকৃতপক্ষে তারাই দাঙ্গা-হাঙ্গামা সৃষ্টিকারী, কিন্তু তারা তা উপলব্ধি করে না।",
+    "সাবধান! প্রকৃতপক্ষে তারাই নির্বোধ, কিন্তু তারা তা জানে না।",
+    "এবং ধৈর্য ধারণ কর, নিশ্চয়ই আল্লাহ সৎকর্মশীলদের প্রতিফল বিনষ্ট করেন না।",
+    "নিশ্চয়ই আল্লাহ ধৈর্যশীলদের সাথে আছেন।",
+    "এবং মানুষের সাথে সদ্ব্যবহার করো।",
+    "এবং যারা রাগ দমন করে এবং মানুষকে ক্ষমা করে – আর আল্লাহ সৎকর্মশীলদের ভালোবাসেন।",
+    "এবং আমরা মানুষকে তার পিতামাতার প্রতি সদাচরণের নির্দেশ দিয়েছি।",
+    "নিশ্চয়ই আল্লাহ ন্যায়বিচার, সৎকর্ম এবং আত্মীয়দেরকে দান করার নির্দেশ দেন।",
+    "এবং তোমাদের মধ্যে পারস্পরিক অনুগ্রহ ভুলে যেয়ো না।",
+    "এবং যে ধৈর্য ধারণ করে এবং ক্ষমা করে, নিশ্চয়ই এটি দৃঢ় সংকল্পের কাজগুলোর অন্তর্ভুক্ত।",
+    "এবং তাদের প্রতি দয়া করে বিনয়াবনত হও।",
+    "আল্লাহ্‌ – তিনি ছাড়া কোনো ইলাহ নেই, তিনি চিরঞ্জীব, সর্বসত্তার ধারক।",
+    "আর অবশ্যই আমি আদম সন্তানদের সম্মানিত করেছি।",
+    "নিশ্চয়ই এই কুরআন এমন পথে পরিচালিত করে, যা সবচেয়ে সঠিক।",
 ];
 
 const source = [
@@ -114,6 +164,31 @@ const source = [
     "Quran (39:53)",
     "Quran (104:1)",
     "Quran (79:29)",
+    "Quran (65:2)",
+    "Quran (16:128)",
+    "Quran (40:60)",
+    "Quran (5:42)",
+    "Quran (54:17)",
+    "Quran (32:17)",
+    "Quran (77:41)",
+    "Quran (36:55)",
+    "Quran (33:44)",
+    "Quran (2:10)",
+    "Quran (2:11)",
+    "Quran (2:12)",
+    "Quran (2:13)",
+    "Quran (11:115)",
+    "Quran (2:153)",
+    "Quran (2:83)",
+    "Quran (3:134)",
+    "Quran (31:14)",
+    "Quran (16:90)",
+    "Quran (2:237)",
+    "Quran (42:43)",
+    "Quran (17:24)",
+    "Quran (2:255)",
+    "Quran (17:70)",
+    "Quran (17:9)",
 ];
 
 const GetVerse = async () => {
@@ -154,7 +229,7 @@ const WelcomeVerse = () => {
             <Lang
                 english={versesEnglish[verseIndex]}
                 bengali={versesBengali[verseIndex]}
-                style={{ fontSize: 17, fontWeight: "800" }}
+                style={{ fontSize: 14, fontWeight: "800" }}
             />
 
             <Lang
