@@ -1,33 +1,26 @@
-import { View, Text, StyleSheet } from "react-native";
-import React from "react";
-import { Link } from "expo-router";
-import { SafeAreaView } from "react-native-safe-area-context";
+import React, { useContext } from "react";
+import { WebView } from "react-native-webview";
+import Constants from "expo-constants";
+import { StatusBar } from "expo-status-bar";
+import { LanguageContext } from "../_layout";
 
 const QuranPage = () => {
+    const [language] = useContext(LanguageContext);
+
     return (
-        <View style={styles.body}>
-            <SafeAreaView style={styles.container}>
-                <Text>Quran Route</Text>
-                <Link href="/">Home</Link>
-            </SafeAreaView>
-        </View>
+        <>
+            {/* Set the status bar color to white */}
+            <StatusBar style="dark" backgroundColor="white" />
+
+            <WebView
+                style={{
+                    flex: 1,
+                    marginTop: Constants.statusBarHeight,
+                }}
+                source={{ uri: `https://quran.com/${language === "English" ? "en" : "bn"}` }}
+            />
+        </>
     );
 };
-
-const styles = StyleSheet.create({
-    body: {
-        width: "100%",
-        height: "100%",
-        position: "absolute",
-    },
-
-    container: {
-        position: "absolute",
-        paddingLeft: "5%",
-        paddingRight: "5%",
-        width: "100%",
-        height: "100%",
-    },
-});
 
 export default QuranPage;

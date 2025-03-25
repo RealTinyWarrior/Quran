@@ -1,0 +1,132 @@
+import { RenderableContent } from "../components/ArticleRenderer";
+import { renderLine } from "../components/ArticleRenderer";
+
+const fajrAdhan: RenderableContent[] = [
+    {
+        type: "bismillah",
+        content: "fajr adhan",
+    },
+    renderLine,
+    {
+        type: "arabic",
+        content: "اللهُ أَكْبَرُ اللهُ أَكْبَرُ",
+    },
+    {
+        type: "paragraph",
+        content: "Allah is the Greatest, Allah is the Greatest.",
+        contentBengali: "আল্লাহ সর্বশ্রেষ্ঠ, আল্লাহ সর্বশ্রেষ্ঠ।",
+        alignRight: true,
+    },
+    renderLine,
+    {
+        type: "arabic",
+        content: "اللهُ أَكْبَرُ اللهُ أَكْبَرُ",
+    },
+    {
+        type: "paragraph",
+        content: "Allah is the Greatest, Allah is the Greatest.",
+        contentBengali: "আল্লাহ সর্বশ্রেষ্ঠ, আল্লাহ সর্বশ্রেষ্ঠ।",
+        alignRight: true,
+    },
+    renderLine,
+    {
+        type: "arabic",
+        content: "أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
+    },
+    {
+        type: "paragraph",
+        content: "I bear witness that there is no deity but Allah.",
+        contentBengali: "আমি সাক্ষ্য দিচ্ছি যে, আল্লাহ ছাড়া কোনো ইলাহ নেই।",
+        alignRight: true,
+    },
+    renderLine,
+    {
+        type: "arabic",
+        content: "أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ",
+    },
+    {
+        type: "paragraph",
+        content: "I bear witness that there is no deity but Allah.",
+        contentBengali: "আমি সাক্ষ্য দিচ্ছি যে, আল্লাহ ছাড়া কোনো ইলাহ নেই।",
+        alignRight: true,
+    },
+    renderLine,
+    {
+        type: "arabic",
+        content: "أَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ",
+    },
+    {
+        type: "paragraph",
+        content: "I bear witness that Muhammad is the Messenger of Allah.",
+        contentBengali: "আমি সাক্ষ্য দিচ্ছি যে, মুহাম্মদ (সা.) আল্লাহর রাসূল।",
+        alignRight: true,
+    },
+    renderLine,
+    {
+        type: "arabic",
+        content: "أَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ",
+    },
+    {
+        type: "paragraph",
+        content: "I bear witness that Muhammad is the Messenger of Allah.",
+        contentBengali: "আমি সাক্ষ্য দিচ্ছি যে, মুহাম্মদ (সা.) আল্লাহর রাসূল।",
+        alignRight: true,
+    },
+    renderLine,
+    {
+        type: "arabic",
+        content: "حَيَّ عَلَى الصَّلَاةِ حَيَّ عَلَى الصَّلَاةِ",
+    },
+    {
+        type: "paragraph",
+        content: "Hasten to the prayer, Hasten to the prayer.",
+        contentBengali: "নামাজে জন্য এসো, নামাজে জন্য এসো।",
+        alignRight: true,
+    },
+    renderLine,
+    {
+        type: "arabic",
+        content: "حَيَّ عَلَى الفَلَاحِ حَيَّ عَلَى الفَلَاحِ",
+    },
+    {
+        type: "paragraph",
+        content: "Hasten to success, Hasten to success.",
+        contentBengali: "সাফল্যের জন্য এসো, সাফল্যের জন্য এসো।",
+        alignRight: true,
+    },
+    renderLine,
+    {
+        type: "arabic",
+        content: "الصَّلَاةُ خَيْرٌ مِّنَ النَّوْمِ الصَّلَاةُ خَيْرٌ مِّنَ النَّوْمِ",
+    },
+    {
+        type: "paragraph",
+        content: "Prayer is better than sleep, Prayer is better than sleep.",
+        contentBengali: "নামাজ ঘুমের চেয়ে উত্তম, নামাজ ঘুমের চেয়ে উত্তম।",
+        alignRight: true,
+    },
+    renderLine,
+    {
+        type: "arabic",
+        content: "اللَّهُ أَكْبَرُ اللَّهُ أَكْبَرُ",
+    },
+    {
+        type: "paragraph",
+        content: "Allah is the Greatest, Allah is the Greatest.",
+        contentBengali: "আল্লাহ সর্বশ্রেষ্ঠ, আল্লাহ সর্বশ্রেষ্ঠ।",
+        alignRight: true,
+    },
+    renderLine,
+    {
+        type: "arabic",
+        content: "لَا إِلٰهَ إِلَّا اللَّهُ",
+    },
+    {
+        type: "paragraph",
+        content: "There is no deity but Allah.",
+        contentBengali: "আল্লাহ ছাড়া কোনো উপাস্য নেই।",
+        alignRight: true,
+    },
+];
+
+export default fajrAdhan;

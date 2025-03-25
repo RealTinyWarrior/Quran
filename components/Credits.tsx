@@ -13,10 +13,9 @@ const Credits = () => {
 
             <Lang
                 english="An all-in-one Quran application! Recite the holy Quran or read hadiths and much more! This
-                mobile application is under development and is being being developed by Tahmidur Rahman
-                [TinyWarrior], Tamjidur Rahman and Muntasir Rahman."
+                mobile application is under development and is being being developed by Tahmidur Rahman, Tamjidur Rahman, Muntasir Rahman and Mahiruddin."
                 bengali="একটি অল-ইন ওয়ান কুরআন অ্যাপ্লিকেশন! পবিত্র কোরআন তেলাওয়াত কোরুন বা হাদিস পড়ুন এবং আরও অনেক কিছু! এই
-                মোবাইল অ্যাপ্লিকেশনটি তাহমিদুর রহমান [TinyWarrior], তামজিদুর রহমান ও মুনতাসির রহমান তৈরি করছেন।"
+                মোবাইল অ্যাপ্লিকেশনটি তাহমিদুর রহমান, তামজিদুর রহমান, মুনতাসির রহমান এবং মাহিরুদ্দিন তৈরি করছেন।"
                 style={{ textAlign: "center", lineHeight: 22, fontWeight: "400", color: "#616161" }}
             />
         </View>

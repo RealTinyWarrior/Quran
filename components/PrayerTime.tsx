@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { PrayerTimes, CalculationMethod, Coordinates } from "adhan";
 import moment from "moment-timezone";
 import Lang from "./Lang";
-import locations, { jela } from "../app/timeline/locations";
+import locations, { jela } from "../app/times/locations";
 import { Dropdown } from "react-native-element-dropdown";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
@@ -187,6 +187,7 @@ const PrayerTimesComponent = ({ location }: { location: string }) => {
                     searchPlaceholder="Enter a Location"
                 />
             </View>
+
             <ScrollView style={styles.container}>
                 {times.map((group, idx) => (
                     <View
@@ -237,10 +238,9 @@ const styles = StyleSheet.create({
         marginHorizontal: "5%",
         marginBottom: "3%",
         padding: "4%",
-        backgroundColor: "white",
         borderRadius: 6,
-        elevation: 4,
         borderRightWidth: 3,
+        backgroundColor: "rgba(255,255,255,0.84)",
     },
     dropdown: {
         borderColor: "#ccc",

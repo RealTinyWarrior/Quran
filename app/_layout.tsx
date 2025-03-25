@@ -28,9 +28,20 @@ const RootLayout = () => {
                 <Stack.Screen options={{ headerShown: false, animation: "fade_from_bottom" }} name="index" />
                 <Stack.Screen options={{ headerShown: false, animation: "fade_from_bottom" }} name="settings/index" />
                 <Stack.Screen name="quran/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
-                <Stack.Screen name="timeline/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="times/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
                 <Stack.Screen name="dua/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="dua/[id]" options={{ headerShown: false, animation: "fade_from_bottom" }} />
                 <Stack.Screen name="masalah/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="masalah/[id]" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="others/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="coming/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="hadith/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="bukhari/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="muslim/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="dawood/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="nasai/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="majah/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
+                <Stack.Screen name="tirmidhi/index" options={{ headerShown: false, animation: "fade_from_bottom" }} />
             </Stack>
         </LanguageContext.Provider>
     );
